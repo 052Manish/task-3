@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Overpass,sans-serif;
+    font-weight: 400;
+    /* background-color:  hsl(216, 12%, 8%); */
+}
+body{
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.card{
+    /* margin: auto; */
+    width: 23rem;
+    height: 22.5rem;
+    background-color: hsl(213, 19%, 18%);
+    margin-top: 15rem;
+    padding: 2.2rem;
+    border-radius: 2rem;
+}
+.inner{
+    /* background-color: white; */
+    max-width: 100%;
+    /* display: none; */
+}
+.ustar{
+    background-color: hsl(216, 22%, 9%);
+    max-width: 1rem;
+    align-content: center;
+    display: flex;
+    padding: 1rem;
+    border-radius: 10rem;
+}
+.ustar img{
+    width: 1.3rem;
+}
+.heading{
+    font-size: 1.6rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    margin-top: 2.2rem;
+}
+p{
+    color: hsl(216, 12%, 54%);
+    /* font-weight: 600; */
+    margin-top: 0.9rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.list{
+    display: flex;
+    /* background-color: white; */
+    margin-top: 1rem;
+    /* gap: 1.8rem; */
+    /* max-width: 100%; */
+    justify-content: space-between;
+    /* background-color: red; */
+    padding: 0.4rem;
+
+}
+.olist1{
+    color: hsl(216, 12%, 54%);
+    background-color: hsl(216, 22%, 9%);
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 100%;
+    /* margin-left: 0rem; */
+    height: 1.5rem;
+    width: 1.5rem;
+    text-align: center;
+}
+button{
+    margin-top: 2rem;
+    width: 100%;
+    background-color:hsl(25, 97%, 53%);
+    padding: 0.8rem;
+    border-radius: 2rem;
+    border: none;
+    color:  hsl(0, 0%, 100%);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+button:hover{
+    background-color:hsl(0, 0%, 100%);
+    color:  hsl(25, 97%, 53%);
+}
+.olist1:hover{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+}
+
+
+.inner1 {
+    display: none;
+}
+.inner1 img{
+    display: flex;
+    /* align-content: center; */
+    margin-left: 7rem;
+    justify-content: center;
+    /* justify-items: center; */
+}
+.line{
+    background-color: hsl(216, 22%, 9%);
+    margin-top: 2.5rem;
+    padding: 0.7rem;
+    border-radius: 2.9rem;
+    color: hsl(25, 97%, 53%);
+    align-items: center;
+    justify-content: center; 
+    /* justify-items: center; */
+    /* align-content: center; */
+    display: flex;
+}
+.second h3{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center; 
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="card">
+        <div class="inner">
+            <div class="ustar">
+                <img src="icon-star.svg" alt="">
+            </div>
+            <div class="heading">How did we do?</div>
+            <p>Please let us know how we did with your support request.
+                All feedback is appreciated to help us improve our offering!</p>
+            <div class="list">
+                <div class="olist1">1</div>
+                <div class="olist1">2</div>
+                <div class="olist1">3</div>
+                <div class="olist1">4</div>
+                <div class="olist1">5</div>
+            </div>
+            <button onclick="btnclick()">SUBMIT</button>
+
+
+        </div>
+        <div class="inner1">
+            <div class="second">
+                <img src="illustration-thank-you.svg" alt="">
+
+                <div class="line">You Selected 2 out of 5</div>
+                <h3>Thank You!</h3>
+                <p>We appriciate you taking the time to give a rating.
+                    if you ever need more support,don't hesitate to
+                    get in touch.</p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+<script>
+    var tar = null;
+
+    function changeCSS(event) {
+        if (tar != null) tar.style.backgroundColor = 'hsl(216, 22%, 9%)';
+        if (event.target == tar) {
+            tar = null;
+        }
+        else {
+            tar = event.target
+            tar.style.backgroundColor = 'hsl(25, 97%, 53%)';
+        }
+    }
+
+    var target = document.querySelectorAll('.olist1');
+
+    target.forEach(element => {
+        element.addEventListener("click", changeCSS);
+    });
+
+
+    var page = 1
+
+    function btnclick() {
+        if (tar == null) return;
+
+
+
+        var ine = document.querySelector('.inner');
+        var in1 = document.querySelector('.inner1');
+
+        ine.style.display = 'none';
+        in1.style.display = 'block';
+        content();
+
+    }
+
+    function content() {
+        var con1 = document.querySelector('.line');
+        con1.innerHTML = `You selected ${tar.innerHTML} out of 5.`;
+    }
+
+
+    btnclick();
+
+</script>
